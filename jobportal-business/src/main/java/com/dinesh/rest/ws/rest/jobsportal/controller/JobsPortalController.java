@@ -26,8 +26,8 @@ import org.springframework.web.bind.annotation.RestController;
 import com.dinesh.rest.ws.rest.jobsportal.entity.UserAccount;
 import com.dinesh.rest.ws.rest.jobsportal.entity.UserType;
 import com.dinesh.rest.ws.rest.jobsportal.entity.dto.UserRegistrationDTO;
-import com.dinesh.rest.ws.rest.jobsportal.repository.UserAccountRepository;
-import com.dinesh.rest.ws.rest.jobsportal.repository.UserTypeRepository;
+import com.dinesh.rest.ws.rest.jobsportal.repository.UserAccountRepositoryDup;
+import com.dinesh.rest.ws.rest.jobsportal.repository.UsersTypeRepositorydup;
 import com.dinesh.rest.ws.rest.jobsportal.service.JobsPortalService;
 
 @CrossOrigin(origins = "*", allowedHeaders = "*")
@@ -37,10 +37,10 @@ public class JobsPortalController {
 	private static final Logger LOGGER = LoggerFactory.getLogger(JobsPortalController.class);
 
 	@Autowired
-	UserAccountRepository userAccountRepository;
+	UserAccountRepositoryDup userAccountRepository;
 
 	@Autowired
-	UserTypeRepository userTypeRepository;
+	UsersTypeRepositorydup userTypeRepository;
 
 	@PostMapping("/jpa/users/register")
 	@ResponseBody

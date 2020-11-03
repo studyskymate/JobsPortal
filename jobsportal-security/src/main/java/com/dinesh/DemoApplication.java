@@ -1,4 +1,4 @@
-package com.dinesh.jobportal.application;
+package com.dinesh;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.dinesh.jobportal.service.MyService;
 
-@SpringBootApplication(scanBasePackages = "com.dinesh")
+@SpringBootApplication(scanBasePackages={"com.dinesh"})
 @RestController
 public class DemoApplication {
 
